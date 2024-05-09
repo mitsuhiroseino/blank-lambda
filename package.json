@@ -18,7 +18,7 @@
     "build": "rimraf build && tsx ./scripts/build",
     "product": "rimraf temp && tsx ./scripts/productize",
     "format": "prettier --write \"src/**/*.{ts,js,json}\"",
-    "optimize": "prettier --write \"src/**/*.{ts,js,json}\" --config ./.prettierrc.cleanup.js",
+    "optimize": "prettier --write \"src/**/*.{ts,js,json}\" --config ./.prettierrc.optimize.js",
     "test": "jest"
   },
   "dependencies": {
@@ -28,8 +28,6 @@
   "devDependencies": {
     "@types/archiver": "^6.0.2",
     "@types/aws-lambda": "^8.10.137",
-    "@types/babel__plugin-transform-runtime": "^7",
-    "@types/babel__preset-env": "^7",
     "@types/fs-extra": "^11.0.4",
     "@types/jest": "^29.5.0",
     "@types/lodash": "^4",

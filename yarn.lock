@@ -1190,20 +1190,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/babel__plugin-transform-runtime@npm:^7":
-  version: 7.9.5
-  resolution: "@types/babel__plugin-transform-runtime@npm:7.9.5"
-  checksum: 10c0/119d8f88188c63eb21bf150d294991d3470e6aa90dc8ec9f634197760af8acc981564e29af9087bfa8ad713b5b5419cae03047cd225fccb9977bb97adf25a871
-  languageName: node
-  linkType: hard
-
-"@types/babel__preset-env@npm:^7":
-  version: 7.9.6
-  resolution: "@types/babel__preset-env@npm:7.9.6"
-  checksum: 10c0/639bcf58094530eb8509b302de9c42fc1a9e44e236bcbfd218e987aba7a2c15052c3a1cac7ca7f260255e74beb3b489ff877b9870f8587394457cd3aa9f64934
-  languageName: node
-  linkType: hard
-
 "@types/babel__template@npm:*":
   version: 7.4.4
   resolution: "@types/babel__template@npm:7.4.4"
@@ -1710,8 +1696,6 @@ __metadata:
   dependencies:
     "@types/archiver": "npm:^6.0.2"
     "@types/aws-lambda": "npm:^8.10.137"
-    "@types/babel__plugin-transform-runtime": "npm:^7"
-    "@types/babel__preset-env": "npm:^7"
     "@types/fs-extra": "npm:^11.0.4"
     "@types/jest": "npm:^29.5.0"
     "@types/lodash": "npm:^4"
