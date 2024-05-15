@@ -18,7 +18,7 @@
     "build": "rimraf build && tsx ./scripts/build",
     "product": "rimraf temp && tsx ./scripts/productize",
     "format": "prettier --write \"src/**/*.{ts,js,json}\"",
-    "optimize": "prettier --write \"src/**/*.{ts,js,json}\" --config ./.prettierrc.organize.js",
+    "optimize": "prettier --write \"src/**/*.{ts,js,json}\" --config ./prettier.organize.config.js",
     "test": "jest"
   },
   "dependencies": {
