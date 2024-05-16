@@ -1,16 +1,17 @@
-import pluginJs from '@eslint/js';
-import eslintConfigPrettier from 'eslint-config-prettier';
+import jsPlugin from '@eslint/js';
+import prettierPlugin from 'eslint-config-prettier';
 import globals from 'globals';
-import tseslint from 'typescript-eslint';
+import tsPlugin from 'typescript-eslint';
 
 /** @type {import('eslint').Linter.FlatConfig[]} */
 export default [
-  { files: ['src/**/*.{ts,tsx}', 'scripts/**/*.{ts,tsx}'] },
   { languageOptions: { globals: globals.node } },
-  pluginJs.configs.recommended,
-  ...tseslint.configs.recommended,
+  ...tsPlugin.configs.recommended,
+  jsPlugin.configs.recommended,
   // prettierと競合するlint対応
-  eslintConfigPrettier,
+  prettierPlugin,
+  // build配下とnode_modules配下は除外
+  { ignores: ['build/**/*', 'node_modules/**/*'] },
   // コンフィグファイルはlintから除外
   { ignores: ['*.config.{js,mjs,ts}'] },
 ];

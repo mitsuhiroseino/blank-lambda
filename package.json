@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "author": "Mitsuhiro Seino",
   "license": "MIT",
+  "type": "module",
   "main": "build/index.js",
   "module": "build/index.mjs",
   "types": "build/index.d.ts",
