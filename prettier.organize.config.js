@@ -1,8 +1,9 @@
-const normal = require('./prettier.config');
+import normal from './prettier.config';
 
 /** @type {import("prettier").Config} */
 const config = {
   ...normal,
   organizeImportsSkipDestructiveCodeActions: false,
 };
-module.exports = config;
+export default config;
+

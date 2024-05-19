@@ -5,13 +5,17 @@ import tsPlugin from 'typescript-eslint';
 
 /** @type {import('eslint').Linter.FlatConfig[]} */
 export default [
-  { languageOptions: { globals: globals.node } },
+  {
+    files: ['src/**/*.ts', 'scripts/**/*.ts'],
+    ignores: ['build/**', 'node_modules/**'],
+    languageOptions: {
+      globals: [globals.node, globals.jest],
+    },
+  },
   ...tsPlugin.configs.recommended,
   jsPlugin.configs.recommended,
   // prettierと競合するlint対応
   prettierPlugin,
-  // build配下とnode_modules配下は除外
-  { ignores: ['build/**/*', 'node_modules/**/*'] },
   // コンフィグファイルはlintから除外
   { ignores: ['*.config.{js,mjs,ts}'] },
 ];

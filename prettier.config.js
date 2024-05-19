@@ -12,4 +12,4 @@ const config = {
   organizeImportsSkipDestructiveCodeActions: true,
   plugins: ['prettier-plugin-organize-imports'],
 };
-module.exports = config;
+export default config;
